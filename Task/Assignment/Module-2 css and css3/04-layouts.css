@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px 0;
+    flex-wrap: wrap;
+}
+.container-1{
+    height:auto;
+    width: 470px;
+    box-shadow: 8px 8px 5px black ;
+}
+.head-section{
+    height:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    color: white;
+    padding: 70px;
+    font-size: 2em;
+}
+.content-section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    /* background-color: red; */
+}
+.btn-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+.btn{
+    display: inline;
+    border: 2px solid;
+    padding: 3px 10px;
+}

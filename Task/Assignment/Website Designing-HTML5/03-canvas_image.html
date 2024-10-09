@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas_tag</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            border: 5px solid yellow;
+            padding: 50px 25px;
+        }
+        #myCanvas_2{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: url(./images/convas_image.jpeg);
+            background-position: center;
+            background-size: 150px;
+        }
+        ul{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+        <ul>
+            <li><h3>create some shape using canvas tag in html</h3></li>
+        </ul>
+        <div class="container">
+            <div class="square">
+                <canvas id="myCanvas" width="100" height="100" style="border-radius: 6px;"></canvas> 
+                <script>
+                const canvas = document.getElementById("myCanvas");
+                const ctx = canvas.getContext("2d");
+                ctx.fillStyle="red"
+                ctx.fillRect(0,0, 150,100);
+            </script> 
+            </div>
+            <div class="circle">
+                <canvas id="myCanvas_2"></canvas>
+            </div>
+            <div class="rectangle">
+                <canvas id="myCanvas_3" width="200" height="100" style="border-radius: 6px; background-color: orange ;">this is the rect canvas tag</canvas> 
+                <script>
+                const canvas_3 = document.getElementById("myCanvas_3");
+                const ctx_3 = canvas_3.getContext("2d");
+                ctx_3.fillStyle="orange"
+                ctx.fillRect(10,10, 150,100);
+                </script> 
+            </div>
+        </div>
+</body>
+</html>

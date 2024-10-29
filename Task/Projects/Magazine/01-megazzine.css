@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-section{
+    height: auto;
+    background-color: black;
+    padding: 20px 0 0 10px;
+}
+.nested-section{
+    height: 151vh;
+    background-color: rgb(197, 192, 187);
+    padding-top: 20px;  
+}
+/* ------ container-1--logo, list-sign-sign, searchbar,*/
+.container-1{
+    height: auto;
+    width: auto;
+    background-color: rgb(66, 66, 66);
+    padding: 25px;
+}
+.logo{
+    display: inline-block;
+}
+.logo-half-1{
+    font-size: 2.5em;
+    color: #ffff;
+    font-weight: 800;
+}
+.logo-half-2{
+    font-size: 2.5em;
+    color: skyblue;
+    font-weight: 800;
+}
+.logo-below-text{
+    color: #ffff;
+    padding: 0;
+}
+.container-2 ul,.navbar-list ul{
+    list-style: none;
+}
+.navbar-list a,.container-2 ul li a{
+    text-decoration: none;
+    color: #ffff;
+}
+.navbar-list ul li{
+    padding-left: 20px;
+    float: right;
+}
+.navbar-list{
+    float: right;
+}
+.search-bar-content{
+    letter-spacing: 5px;
+    color: #ffff;
+    padding-right: 15px;
+    font-size: 13px;
+}
+.search-bar{
+    width: 300px;
+    height: 25px;
+    border: none;
+    background-color: rgb(120, 118, 118);
+}
+.search-bar::placeholder{
+    color: #ffff;
+    font-size: 2em;
+}
+.search-section{
+    padding-top: 15px;
+    display: inline;
+    float: right;
+}
+.search-logo{
+    float: right;
+    right: 50px;
+    height: 25px;
+    width: 20px;
+    background-color: rgb(120, 118, 118);
+    background-image: url(./images/search-icon-1.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* ---------container-2 second navabar------- */
+.container-2{
+    background-color: black;
+    margin-top: 20px;
+}
+.container-2 ul li{
+    display: inline-block;
+    padding: 15px 0 15px 60px;
+    background-color: black;
+    font-size: 20px;
+}
+.container-2 ul li:first-child{
+    padding-left: 20px;
+}
+.container-2 ul li a:hover{
+    color: aqua;
+}
+/* -------container-3-includes three category---- */
+.container-3{
+    float: left;
+    padding: 20px;
+}
+/* ------category heading----- */
+.cate-1-heading{
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    background-color: grey;
+    color: #ffff;
+    font-weight: 700;
+}
+.three-category{
+    display: inline-block;
+}
+.category-1,.category-2{
+    display: flex;
+    width: auto;
+    background-color: #ffff; 
+}
+.cate-1-img{
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* ------Three category images---- */
+.img-1{
+    background-image: url(./images/post-1.jpg);
+}
+.img-2{
+    background-image: url(./images/post-3.jpg);
+}
+.img-3{
+    background-image: url(./images/post-2.jpg);
+}
+.img-4{
+    background-image: url(./images/post-4.jpg);
+}
+.img-5{
+    background-image: url(./images/post-5.jpg);
+}
+.img-7{
+    background-image: url(./images/post-6.jpg);
+}
+.img-9{
+    background-image: url(./images/post-7.jpg);
+}
+.img-10{
+    background-image: url(./images/post-9.jpg);
+}
+.img-11{
+    background-image: url(./images/post-8.jpg);
+}
+.img-12{
+    background-image: url(./images/post-10.jpg);
+}
+
+.img-and-content{
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+}
+.content{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.c-1-para{
+    font-size: 14px;
+}
+.head-para{
+    font-weight: 700;
+}
+/* -----category link--- */
+.cate-1-heading-link{
+    padding: 10px 25px;
+}
+.cate-1-heading-link a{
+    color: skyblue;
+    font-weight: 700;
+}
+.cate-2-first-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-left: 2px solid rgba(128, 128, 128, 0.116);
+}
+.category-2{
+    margin-top: 15px;
+}
+/* -----------vertical-menu-2----- */
+.vertical-menu-2{
+    margin-top: 20px;
+}
+.vertical-menu-2{
+    float: left;
+}
+/* -------vertical-menu-list----- */
+.list-head{
+    background-color: grey;
+    padding: 5px 200px 5px 5px;
+    color: #ffff;
+}
+.select-category ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.select-category ul li a:hover{
+    color: aqua;
+}
+.select-category ul{
+    list-style-type:square;
+    line-height: 25px;
+    padding-left: 25px;
+}
+.select-category{
+    background-color: #ffff;
+}
+/* ---------vertical-menu-3----two advertise boxes------ */
+.vertical-menu-3{
+    padding: 20px;
+    float: right;
+}
+.ad-first-sec{
+    width: 234px;
+    border: 10px solid #ffff;
+    font-size: 36px;
+    text-align: center;
+    padding: 50px 0;
+}
+.ad-second-sec{
+    margin-top: 20px;
+    width: 234px;
+    height: 500px;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 50px;
+    border: 10px solid #ffff;
+}

@@ -14,12 +14,7 @@
     }
     label {
         font-weight: 600;
-        /* color: #F7CBCA; */
         color: darkgray;
-        /* color: rgba(255, 166, 0, 0.563); */
-        /* color: orangered; */
-        /* color: brown; */
-        /* color: rgba(0, 0, 0, 0.671); */
     }
     #bookingForm{
         height: 100vh;
@@ -45,15 +40,17 @@
 </body>
 <script>
 
+    // main container
     const formContainer = document.getElementById("bookingForm")
+
+    // form element with backgroundColor, border, padding and border radius
     const form = document.createElement("form")
-    // form.style.backgroundColor="#5d6b6b5a"
     form.style.backgroundColor="rgba(0, 0, 0, 0.671)"
-    // form.style.border="2px solid #F7CBCA"
     form.style.border="2px solid rgba(255, 166, 0, 0.563)"
     form.style.padding="25px"
     form.style.borderRadius="15px"
 
+    // restaurant booking heading
     const head=document.createElement("h1")
     head.innerHTML="<h3>Restaurant Booking Form</h3>"
     head.style.paddingBottom="25px"

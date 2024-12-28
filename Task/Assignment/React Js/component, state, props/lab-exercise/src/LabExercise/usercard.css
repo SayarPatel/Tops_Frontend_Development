@@ -1,0 +1,18 @@
+.bg-img{
+    height: 150px;
+    width: 120px;
+    background-image: url(../images/WhatsApp\ Image\ 2024-02-06\ at\ 2.00.49\ PM\ \(2\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    height: fit-content;
+    width: fit-content;
+    padding-right: 15px;
+    box-shadow: 0 0px 5px black;
+    margin: auto;
+}
+.nest-container{
+    display: flex;
+    gap: 25px;
+}

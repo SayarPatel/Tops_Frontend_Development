@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+/* this is section-1 its include navbar, bg image, opc-div Title content*/
+.section-1-img{
+    width: 100%;
+    height: 796px;
+    background-image: url(./images/section-1-bg-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.nav-list ul{
+    display: flex;
+    gap: 50px;
+}
+.navbar .logo{
+    height: 50px;
+    width: 200px;
+    background-image: url(./images/navbar-logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.search-icon{
+    width: 30px;
+    height: 30px;
+    background-image: url(./images/nav-search-icon.svg);
+    border: none;
+    background-color: #21243d;
+    cursor: pointer;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #21243d;
+    padding: 10px 50px;
+}
+.section-1-op-div{
+    width: 100%;
+    height: 796px;
+    background-color: rgba(255, 68, 0, 0.114); 
+}
+.sec-1-head{
+    font-size: 125px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.sec-1-para{
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    width: 700px;
+}
+.sec-1-btn{
+    width: 322px;
+    height: 65px;
+    border-radius: 33px;
+    background-color: #21243d;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+.section-1-content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 150px 0;
+    padding-left: 80px;
+}
+/* ---------------------popular menu section ---------*/
+.sec-2-head-para{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #21243d;
+    gap: 50px;
+    padding: 100px 0;
+}
+.sec-2-head{
+    font-size: 64px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+.sec-2-para{
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    width: 700px;
+}
+.sec-2-menu-img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;  
+    background-position: center;
+}
+.sec-2-f-img{
+    background-image: url(./images/section-2-img-1.svg);
+}
+.sec-2-s-img{
+    background-image: url(./images/section-2-img-2.svg);
+}
+.sec-2-t-img{
+    background-image: url(./images/section-2-img-3.svg);
+}
+.sec-2-menu-title{
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+.sec-2-menu-para{
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+}
+.menu-items{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.sec-2-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sec-2-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+}
+/* section-3 image and title here content */
+.section-3{
+    height: 100vh;
+    width: auto;
+    background-color: #ffd17e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.sec-3-img{
+    width: 464px;
+    height: 463px;
+    border-radius: 100%;
+    background-color: #9a9a9a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.s3-img{
+    background-image: url(./images/section-3-img.svg);
+}
+.sec-3-title{
+    font-size: 75px;
+    color: #21243d;
+    font-weight: 700;
+}
+.sec-3-para{
+    font-size: 30px;
+    color: #21243d;
+    font-weight: 400;
+    width: 500px;
+}
+.sec-3-content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+/* ------secction-4 statistics and three image section------  */
+.section-4-circle{
+    width: 274px;
+    height: 275px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sec-4-circle-number{
+    font-size: 75px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.sec-4-circle-content{
+    font-size: 42px;
+    color: #ffffff;
+    font-weight: 700;
+}
+/* --------section-5 content and image--------- */
+.section-5-img{
+    background-image: url(./images/section-5-img.svg);
+}
+/* --------section-6 opacity div and girl pic----- */
+.section-6{
+    height: 796px;
+    width: 100%;
+    background-image: url(./images/Place\ Your\ Image\ Here\ \(Double\ Click\ to\ Edit\).svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec-6-opacity-div{
+    height: 796px;
+    width: 100%;
+    background-color: rgba(0, 0, 128, 0.749);
+    position: absolute;
+}
+.sec-6-img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-image: url(./images/sec-6-img.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sec-6-para{
+    font-size: 42px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+}
+.sec-6-foot-head{
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+.sec-6-content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+    width: 900px;
+}
+/* ----------section-7  title here and search bar------- */
+.section-7{
+    height: 100vh;
+    width: auto;
+    background-color: #ffd17e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sec-7-title{
+    font-size: 75px;
+    color: #21243d;
+    font-weight: 700;
+    text-align: center;
+}
+.sec-7-para{
+    font-size: 30px;
+    color: #21243d;
+    font-weight: 400;
+    text-align: center;
+    width: 900px;
+}
+.sec-7-seaarch-area input{
+    width: 659px;
+    height: 63px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    position: absolute;
+}
+.sec-7-seaarch-area input::placeholder{
+    padding-left: 40px;
+    opacity: 0.502;
+    font-size: 25px;
+    color: #000000;
+    font-weight: 400;
+}
+.subscribe-btn{
+    width: 222px;
+    height: 65px;
+    border-radius: 33px;
+    background-color: #21243d;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    left: 545px;
+}
+.sec-7-searchbar{
+    display: flex;
+    margin-left: 50px;
+}
+.sec-7-content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+/* ------section-8 about services others icons----- */
+.section-8{
+    height: 100vh;
+    width: auto;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.sec-8-head{
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.sec-8-para{
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.sec-8-abt-serv-list ul li a{
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 42px;
+}
+.sec-8-first-sec{
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.sec-8-icons{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    font-size: 30px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.first-sec-icon{
+    display: flex;
+    gap: 15px;
+}
+.sec-8-list-sec{
+    display: flex;
+    gap: 50px;
+}
+.sec-8-about-serv{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}

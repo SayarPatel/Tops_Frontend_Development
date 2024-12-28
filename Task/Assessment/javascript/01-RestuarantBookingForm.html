@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restuarant Booking Form</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    label {
+        font-weight: 600;
+        color: darkgray;
+    }
+    #bookingForm{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #5d6b6b5a;
+        background-image: url(./images/restuarant.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    input{
+        border: none;
+        margin-bottom: 5px;
+        border-radius: 2px;
+    }
+</style>
+
+<body>
+     <div id="bookingForm"></div>
+</body>
+<script>
+
+    // main container
+    const formContainer = document.getElementById("bookingForm")
+
+    // form element with backgroundColor, border, padding and border radius
+    const form = document.createElement("form")
+    form.style.backgroundColor="rgba(0, 0, 0, 0.671)"
+    form.style.border="2px solid rgba(255, 166, 0, 0.563)"
+    form.style.padding="25px"
+    form.style.borderRadius="15px"
+
+    // restaurant booking heading
+    const head=document.createElement("h1")
+    head.innerHTML="<h3>Restaurant Booking Form</h3>"
+    head.style.paddingBottom="25px"
+    head.style.color="orange"
+    form.appendChild(head)
+
+    // create a div for the append all the input field and label
+    const createInputField = document.createElement("div")
+    createInputField.style.display="flex"
+    createInputField.style.flexDirection="column"
+
+    // create a div for select tag
+    const bookingChoiceDiv = document.createElement("div")
+
+    // label for the dropdown menu
+    const bookingLabel = document.createElement("label")
+    bookingLabel.innerHTML = "Choice of Booking: "
+    bookingLabel.className = "custom-label"
+    bookingLabel.style.paddingRight="50px"
+
+    // create a select element
+    const bookingSelect = document.createElement("select")
+    bookingSelect.id = "bookingChoice"
+    bookingSelect.style.marginBottom="5px"
+    bookingSelect.style.border="none"
+    bookingSelect.style.width="161px"
+    bookingSelect.style.borderRadius="2px"
+
+    // create a first option tag and add the text 
+    const opt = document.createElement("option")
+    opt.value = "Select Your Choice"
+    opt.innerText = "Select Your Choice"
+    bookingSelect.appendChild(opt)
+
+    // second option tag
+    const opt1 = document.createElement("option")
+    opt1.value = "full day booking"
+    opt1.innerText = "Full Day Booking"
+    bookingSelect.appendChild(opt1)
+
+    // Third option tag
+    const opt2 = document.createElement("option")
+    opt2.value = "Half day booking"
+    opt2.innerText = "Half Day Booking"
+    bookingSelect.appendChild(opt2)
+
+    // Forth option tag
+    const opt3 = document.createElement("option")
+    opt3.value = "Hourly booking"
+    opt3.innerText = "Hourly Booking"
+    bookingSelect.appendChild(opt3)
+
+
+    const input1=document.createElement("div")
+    //  create a label tag with text userName
+    const inputLabel = document.createElement("label")
+    inputLabel.innerHTML = "UserName: "
+    inputLabel.style.paddingRight="102px"
+    inputLabel.style.marginTop="15px"
+
+    
+    // create a input element with type text and id userName
+    const createInput1 = document.createElement("input")
+    createInput1.type = "text"
+    createInput1.name = "userName: "
+    createInput1.id = "userName"
+    createInput1.placeholder = "enter your username"
+    
+
+    
+    // create a second div for the second input field and label
+    const input2 = document.createElement("div")
+
+    // create a label for the mobile number
+    const inputLabel2 = document.createElement("label")
+    inputLabel2.innerHTML = "Mobile Number: "
+    inputLabel2.style.paddingRight="65px"
+
+    // create a input for the mobile number and with type text and id mobile number
+    const createInput2 = document.createElement("input")
+    createInput2.type = "text"
+    createInput2.name = "mobileNumber"
+    createInput2.id = "mobileNumber"
+    createInput2.placeholder = "enter your mobilenumber"
+
+    // create a div for the email input and label
+    const input3 = document.createElement("div")
+
+    // create a  label for the email
+    const inputLabel3 = document.createElement("label")
+    inputLabel3.innerHTML = "Email: "
+    inputLabel3.style.paddingRight="133px"
+
+    // create input element for the email with the type email and id email
+    const createInput3 = document.createElement("input")
+    createInput3.type = "email"
+    createInput3.name = "email"
+    createInput3.id = "email"
+    createInput3.placeholder = "enter your email"
+
+    // created a div for the label and input field for the No. of person
+    const input4 = document.createElement("div")
+
+    // created a label for the No. of person 
+    const inputLabel4 = document.createElement("label")
+    inputLabel4.innerHTML = "No of Person: "
+    inputLabel4.style.paddingRight="85.5px"
+
+    // created a input field for the No. of person with the type number and id number  
+    const createInput4 = document.createElement("input")
+    createInput4.type = "number"
+    createInput4.name = "number"
+    createInput4.id = "number"
+    createInput4.placeholder = "no. of person"
+
+    // created a div for  label and input field for the date
+    const input5 = document.createElement("div")
+
+    // created a label for the date
+    const inputLabel5 = document.createElement("label")
+    inputLabel5.innerHTML = "Date: "
+    inputLabel5.style.paddingRight="141.5px"
+
+    // created a input for the date with the type date
+    const createInput5 = document.createElement("input")
+    createInput5.type = "date"
+    createInput5.name = "date"
+    createInput5.id = "date"
+
+    // initiall date is none
+    input5.style.display = "none"
+
+    // created a div for label and input field for the time 
+    const input6 = document.createElement("div")
+
+    // created a label for the time
+    const inputLabel6 = document.createElement("label")
+    inputLabel6.innerHTML = "Time: "
+    inputLabel6.style.paddingRight="138px"
+
+    // created a input field for the time and with the type time 
+    const createInput6 = document.createElement("input")
+    createInput6.type = "time"
+    createInput6.name = "time"
+    createInput6.id = "time"
+
+    // display none for time 
+    input6.style.display = "none"
+
+    // created a div for label and input for the slot
+    const input7 = document.createElement("div")
+
+    // created a label for the slot 
+    const inputLabel7 = document.createElement("label")
+    inputLabel7.innerHTML = "Slot: "
+    inputLabel7.style.paddingRight="147px"
+
+    // created a select element for select slot
+    const createInput7 = document.createElement("select")
+    createInput7.id = "slot"
+
+    // created a option-1 element for the breakfast and append to the select element
+    const slotOption1 = document.createElement("option")
+    slotOption1.value = "Breakfast"
+    slotOption1.innerHTML = "Breakfast"
+    createInput7.appendChild(slotOption1)
+
+    // created a option-2 for the lunch and append to the select element
+    const slotOption2 = document.createElement("option")
+    slotOption2.value = "Lunch"
+    slotOption2.innerHTML = "Lunch"
+    createInput7.appendChild(slotOption2)
+
+    // created a option-3 for the dinner and append to the select element
+    const slotOption3 = document.createElement("option")
+    slotOption3.value = "Dinner"
+    slotOption3.innerHTML = "Dinner"
+    createInput7.appendChild(slotOption3)
+
+    // initiall display none for the slot 
+    input7.style.display = "none"
+
+    // submit button 
+    // created a input field with the type button 
+    const submitBtn = document.createElement("input")
+    submitBtn.type = "button"
+    submitBtn.value = "Submit"
+    submitBtn.style.padding="5px"
+    submitBtn.style.border="2px solid #F7CBCA"
+    submitBtn.style.borderRadius="5px"
+    submitBtn.style.fontSize="12px"
+    submitBtn.style.alignSelf="center"
+    submitBtn.style.marginTop="15px"
+    submitBtn.style.backgroundColor="transparent"
+    submitBtn.style.fontWeight="600"
+    submitBtn.style.color="#F7CBCA"
+
+
+    // onchange event for the choice of booking
+    bookingSelect.addEventListener("change", () => {
+        const choice = bookingSelect.value
+
+        input5.style.display = "none"
+        input6.style.display = "none"
+        input7.style.display = "none"
+
+        // selection of the choice of full day booking date option will appear
+        if (choice === "full day booking") {
+            input5.style.display = "block"
+        }
+        // selection half day booking date and slot option will appear
+        else if (choice === "Half day booking") {
+            input5.style.display = "block"
+            input7.style.display = "block"
+        }
+        //selection of hourly booking date and time option will appear
+        else if (choice === "Hourly booking") {
+            input5.style.display = "block"
+            input6.style.display = "block"
+        }
+        // if you select "select your choice" hide the date, time and slot option
+        else {
+            input5.style.display = "none"
+            input6.style.display = "none"
+            input7.style.display = "none"
+        }
+    })
+
+    // append the choice of booking
+    bookingChoiceDiv.appendChild(bookingLabel)
+    bookingChoiceDiv.appendChild(bookingSelect)
+
+    // append select tag to the main div
+    createInputField.appendChild(bookingChoiceDiv)
+
+    // append usename and it's input field
+    input1.appendChild(inputLabel)
+    input1.appendChild(createInput1)
+    createInputField.appendChild(input1)
+
+    // append mobiel number field
+    input2.appendChild(inputLabel2)
+    input2.appendChild(createInput2)
+    createInputField.appendChild(input2)
+
+    // append email field
+    input3.appendChild(inputLabel3)
+    input3.appendChild(createInput3)
+    createInputField.appendChild(input3)
+
+    // append no. of  person field
+    input4.appendChild(inputLabel4)
+    input4.appendChild(createInput4)
+    createInputField.appendChild(input4)
+
+    // append date field
+    input5.appendChild(inputLabel5)
+    input5.appendChild(createInput5)
+    createInputField.appendChild(input5)
+
+    // append time field
+    input6.appendChild(inputLabel6)
+    input6.appendChild(createInput6)
+    createInputField.appendChild(input6)
+
+    // append slot field
+    input7.appendChild(inputLabel7)
+    input7.appendChild(createInput7)
+    createInputField.appendChild(input7)
+
+    // append submit button
+    createInputField.appendChild(submitBtn)
+
+    // append all the input field to the form tag
+    form.appendChild(createInputField)
+
+    // append form to the html div
+    formContainer.appendChild(form)
+</script>
+
+</html>

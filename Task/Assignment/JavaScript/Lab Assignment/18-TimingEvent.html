@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing event</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #container>input {
+            padding: 10px 25px;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Write a program that changes the background color of a webpage after 5 seconds using
+    setTimeout(). -->
+
+    <div id="container"><input type="button" name="" id="" value="change BG" onclick="changeBg()"></div>
+    <script>
+        function changeBg() {
+            setTimeout(() => {
+                document.getElementById("container").style.backgroundColor = "red"
+            }, 1000);
+            setTimeout(() => {
+                document.getElementById("container").style.backgroundColor = "green"
+            }, 2000);
+            setTimeout(() => {
+                document.getElementById("container").style.backgroundColor = "blue"
+            }, 3000);
+            setTimeout(() => {
+                document.getElementById("container").style.backgroundColor = "yellow"
+            }, 4000);
+            setTimeout(() => {
+                document.getElementById("container").style.backgroundColor = "orange"
+            }, 5000);
+        }
+    </script>
+</body>
+
+</html>

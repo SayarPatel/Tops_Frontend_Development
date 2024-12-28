@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handaling</title>
+</head>
+<body>
+    <!-- Write a JavaScript program that attempts to divide a number by zero. Use try-catch to
+    handle the error and display an appropriate error message. -->
+    <div id="msg"></div>
+    <script>
+        let num=10
+        try{
+            let res=num/0
+            throw new Error("this is the custom error occured")
+        }
+        catch(err){
+            // document.getElementById("msg").innerHTML="you cannot divide a number by zero"
+            // alert("alert message"+ err.message)
+            console.log("you cannot divide a number by zero")
+        }
+    </script>
+</body>
+</html>
